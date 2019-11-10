@@ -48,7 +48,7 @@
 #define MAX_DRESS_FLAGS 500
 #define DRESS_FLAG_EXPIRY 7200
 
-const char *PSO_CLIENT_VER_STRING = "TethVer12510";
+const char *PSO_CLIENT_VER_STRING = "TethVer12513";
 #define PSO_CLIENT_VER 0x41
 
 //#define USEADDR_ANY
@@ -5494,14 +5494,14 @@ LRESULT CALLBACK WndProc( HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam 
 				if (program_hidden)
 				{
 					program_hidden = 0;
-					ShowWindow (consoleHwnd, SW_NORMAL);
+					//ShowWindow (consoleHwnd, SW_NORMAL);
 					SetForegroundWindow (consoleHwnd);
 					SetFocus(consoleHwnd);
 				}
 				else
 				{
 					program_hidden = 1;
-					ShowWindow (consoleHwnd, SW_HIDE);
+					//ShowWindow (consoleHwnd, SW_HIDE);
 				}
 				return TRUE;
 				break;
@@ -5872,9 +5872,9 @@ main( int argc, char * argv[] )
 		exit (1);
 	}
 
-	ShowWindow ( hwndWindow, SW_HIDE );
+	//ShowWindow ( hwndWindow, SW_HIDE );
 	UpdateWindow ( hwndWindow );
-	ShowWindow ( consoleHwnd, SW_HIDE );
+	//ShowWindow ( consoleHwnd, SW_HIDE );
 	UpdateWindow ( consoleHwnd );
 
     nid.cbSize				= sizeof(nid);

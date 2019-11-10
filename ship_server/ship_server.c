@@ -15774,9 +15774,9 @@ int main()
 		exit (1);
 	}
 
-	ShowWindow ( hwndWindow, SW_HIDE );
+	//ShowWindow ( hwndWindow, SW_HIDE );
 	UpdateWindow ( hwndWindow );
-	ShowWindow ( consoleHwnd, SW_HIDE );
+	//ShowWindow ( consoleHwnd, SW_HIDE );
 	UpdateWindow ( consoleHwnd );
 
     nid.cbSize				= sizeof(nid);
