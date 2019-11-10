@@ -690,7 +690,7 @@ void load_config_file()
 					break;
 				case 0x0C:
 					EXPERIENCE_RATE = atoi (&config_data[0]);
-					if ( EXPERIENCE_RATE > 99 )
+					/*if ( EXPERIENCE_RATE > 99 )
 					{
 						printf ("\nWARNING: You have your experience rate set to a very high number.\n");
 						printf ("As of ship_server.exe version 0.038, you now just use single digits\n");
@@ -700,7 +700,7 @@ void load_config_file()
 						printf (":");
 						gets   (&dp[0]);
 						printf ("\n\n");
-					}
+					}*/
 					break;
 				case 0x0D:
 					ship_support_extnpc = atoi (&config_data[0]);
